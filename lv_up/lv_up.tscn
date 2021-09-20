@@ -1,0 +1,144 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://lv_up/attack.png" type="Texture" id=1]
+[ext_resource path="res://lv_up/health.png" type="Texture" id=2]
+[ext_resource path="res://lv_up/speed.png" type="Texture" id=3]
+[ext_resource path="res://lv_up/lv_up.gd" type="Script" id=4]
+[ext_resource path="res://art/fonts/VT323.tres" type="DynamicFont" id=5]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Nowa animacja"
+length = 4.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureButton:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 244.637, 176.965 ), Vector2( 248.959, 156.942 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("TextureButton2:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 579.392, 176.752 ), Vector2( 576.563, 156.57 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("TextureButton3:rect_position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 915.015, 177.531 ), Vector2( 910.772, 153.266 ) ]
+}
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -6.02441
+margin_top = -9.85498
+margin_right = -6.02441
+margin_bottom = -9.85498
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 166.115 ],
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [ 222.426 ]
+}
+
+[node name="TextureButton" type="TextureButton" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 246.152
+margin_top = 169.946
+margin_right = -915.846
+margin_bottom = -380.059
+texture_normal = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 578.4
+margin_top = 169.677
+margin_right = -583.6
+margin_bottom = -380.323
+texture_normal = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton3" type="TextureButton" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 913.527
+margin_top = 169.025
+margin_right = -248.437
+margin_bottom = -380.95
+texture_normal = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node" type="AnimationPlayer" parent="."]
+"anims/Nowa animacja" = SubResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 245.5
+margin_top = 523.147
+margin_right = -245.5
+margin_bottom = -113.853
+color = Color( 0.372549, 0.729412, 0.721569, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="ColorRect"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.021
+anchor_top = 0.006
+anchor_right = 0.972
+anchor_bottom = 0.971
+margin_left = -7.91453
+margin_top = -0.038
+margin_right = 0.704407
+margin_bottom = 6.01698
+custom_fonts/font = ExtResource( 5 )
+text = "Wybierz swój awans!"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="mouse_entered" from="TextureButton" to="." method="_on_TextureButton_mouse_entered"]
+[connection signal="mouse_exited" from="TextureButton" to="." method="_on_TextureButton_mouse_exited"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="mouse_entered" from="TextureButton2" to="." method="_on_TextureButton2_mouse_entered"]
+[connection signal="mouse_exited" from="TextureButton2" to="." method="_on_TextureButton2_mouse_exited"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_TextureButton2_pressed"]
+[connection signal="mouse_entered" from="TextureButton3" to="." method="_on_TextureButton3_mouse_entered"]
+[connection signal="mouse_exited" from="TextureButton3" to="." method="_on_TextureButton3_mouse_exited"]
+[connection signal="pressed" from="TextureButton3" to="." method="_on_TextureButton3_pressed"]

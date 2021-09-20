@@ -1,0 +1,73 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://art/fonts/VT323-think.tres" type="DynamicFont" id=1]
+[ext_resource path="res://book/book111.gd" type="Script" id=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_left = 0.18
+anchor_top = 0.17
+anchor_right = 0.82
+anchor_bottom = 0.83
+margin_left = -0.460007
+margin_top = -0.199997
+margin_right = 0.459961
+margin_bottom = 0.199951
+
+[node name="Label" type="Label" parent="ColorRect"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_right = 0.479
+anchor_bottom = 0.994
+margin_left = 27.0
+margin_top = 19.0
+margin_right = -15.369
+margin_bottom = -16.79
+custom_fonts/font = ExtResource( 1 )
+text = "Drzewa  polaru są to magiczne rośliny, z który tworzone są najwspanialsze oręże. Są to jednak magiczne drzewa i ukazują się tylko najwspanialszym bohaterom. Jeżeli drzewo ukarze się komuś, ma wielkie szczęście, a jego przeznaczenie będzie usłane przygodami. Są to oczywiście legendy, ponieważ mało kto może potwirdzić istnienie tej rośliny. Ci co uważają, że to prawda, mówią, że uderzenie z gałęzi tego drzewa jest stokroć mocniejsze niż z "
+autowrap = true
+
+[node name="Label2" type="Label" parent="ColorRect"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.994
+margin_left = 36.5
+margin_top = 23.0
+margin_right = -34.0
+margin_bottom = -19.79
+custom_fonts/font = ExtResource( 1 )
+text = "najciężęj, najznamienitszej maczugi. 
+
+Liść Krali - lecznicza roślina rosnąca pod mchem dębu. Wystarczy przyłożyć do rany i mimo bólu mocno wcierać aby błyskawicznie rana się sklepiła.
+
+Grzyb Tarta - trujący grzyb. Jego trujące właściwości uaktywniają się dopiero po kilku dniach..."
+autowrap = true
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+anchor_left = 0.183
+anchor_top = 0.17
+anchor_right = 0.818
+anchor_bottom = 0.83
+margin_left = 444.774
+margin_top = -0.199997
+margin_right = -446.196
+margin_bottom = 0.199951
+color = Color( 0.913725, 0, 0, 1 )
+
+[node name="TextureButton" type="TextureButton" parent="."]
+anchor_left = 0.182
+anchor_top = 0.174
+anchor_right = 0.808
+anchor_bottom = 0.838
+margin_left = 2.19598
+margin_top = -0.940002
+margin_right = 21.0239
+margin_bottom = 0.219971
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

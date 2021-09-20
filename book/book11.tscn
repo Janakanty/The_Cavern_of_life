@@ -1,0 +1,77 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://art/fonts/VT323-think.tres" type="DynamicFont" id=1]
+[ext_resource path="res://book/book11.gd" type="Script" id=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_left = 0.18
+anchor_top = 0.17
+anchor_right = 0.82
+anchor_bottom = 0.83
+margin_left = -0.460007
+margin_top = -0.199997
+margin_right = 0.459961
+margin_bottom = 0.199951
+
+[node name="Label" type="Label" parent="ColorRect"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_right = 0.479
+anchor_bottom = 0.994
+margin_left = 27.0
+margin_top = 19.0
+margin_right = -15.369
+margin_bottom = -9.79004
+custom_fonts/font = ExtResource( 1 )
+text = "Dawno temu Jaś zostawił uciekł z domu. 
+-co ja teraz mam zrobić? - mówił Jaś do siebie. - Nie mam z czego żyć, jestem głodny, ale w domu już nie mogę wytrzymać. Wolę umrzeć niż tam wrócić. 
+Jaśo chodził po wioskach i po jakim czasie wszyscy rozpoznawali go i dawali tu chleba, napoju aby nie umarł. Jaśu dzielnie znosił żywot włóczęgi lecz pewnego dnia jego życie miało się zmienić. "
+autowrap = true
+
+[node name="Label2" type="Label" parent="ColorRect"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.994
+margin_left = 42.1123
+margin_top = 21.8775
+margin_right = -28.3877
+margin_bottom = -20.9125
+custom_fonts/font = ExtResource( 1 )
+text = "Staruszka, która dawała mu chleb została zaatakowana w lesie przez wstrętnego pioskola. Pioskol to był potwór bardzo niebezpieczny i obrzydliwy. Ale jego odwaga była duża, nie mógł uciec gdyż duma i męstwo mu nie pozwalały. Wziął kija, żucił się na ratunek staruszce. Raz, ciach! Zwrot!, Bęc, Trach! Nie trwało to długo i chłopiec zauważył, że zabił niebezpieczne monstrum zbijając cieżki, gruby kij prosto w głowę potworowi..."
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+anchor_left = 0.183
+anchor_top = 0.17
+anchor_right = 0.818
+anchor_bottom = 0.83
+margin_left = 444.774
+margin_top = -0.199997
+margin_right = -446.196
+margin_bottom = 0.199951
+color = Color( 0, 0.25098, 0.913725, 1 )
+
+[node name="TextureButton" type="TextureButton" parent="."]
+anchor_left = 0.18
+anchor_top = 0.167
+anchor_right = 0.821
+anchor_bottom = 0.831
+margin_left = 0.0399933
+margin_top = -0.270004
+margin_right = -0.462036
+margin_bottom = -0.110046
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

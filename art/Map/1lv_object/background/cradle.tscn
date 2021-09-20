@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://art/Object_Pack/First_level_object/background/cradle.png" type="Texture" id=1]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+position = Vector2( -0.37458, 2.24747 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( -91.6359, -59.7719 )
+scale = Vector2( 0.952667, 1 )
+polygon = PoolVector2Array( 113.2, 93.4144, 100.913, 97.6284, 43.7401, 133.119, -67.0358, 93.5965, -16.0605, 40.5054, 101.404, 83.5818 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -56.3489, -34.2757 )
+texture = ExtResource( 1 )
