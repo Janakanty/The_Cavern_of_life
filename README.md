@@ -1,4 +1,4 @@
-Gra tworzona w silniku GODOT. 
+Gra tworzona w silniku GODOT 3.x. Projekt niekontynuowany.
 
 Niektóre założenia: 
 
@@ -6,15 +6,13 @@ Niektóre założenia:
 
 -Gra na jednego gracza
 
--Rozwinięty system dialogowy
+-System dialogowy
 
 -System ekwipunku
 
 -System walki
 
--System zapisywania i wczytywania save'ów
-
--Rozgrywka na 2/3 godziny
+-Rozgrywka na 10 min
 
 ![gif1](https://user-images.githubusercontent.com/62144769/115880242-d00d4d80-a44a-11eb-8478-1b3332bb99bd.gif)
 
